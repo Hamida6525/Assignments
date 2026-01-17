@@ -1,7 +1,7 @@
 //q5.What is the difference between var and dynamic in Dart? Provide an example of each.
 
 /* 
-var : is used to take the type of the value assigned to it at runtime.
+var :(keyword not datatype) is used to take the type of the value assigned to it at runtime.
 Dynamic : is a special type that allows a variable to hold values of any type and can change types at runtime.
 */
 
