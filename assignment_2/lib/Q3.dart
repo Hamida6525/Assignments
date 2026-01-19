@@ -14,5 +14,5 @@ void main() {
 
   // c) Trim spaces from test string
   String test = ' Dart ';
-  print('Trimmed Test: "${test.trim()}"');
+  print('Test: "${test.trim()}"');
 }

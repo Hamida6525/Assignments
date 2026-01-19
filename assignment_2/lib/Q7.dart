@@ -18,6 +18,6 @@ void main() {
   uniqueNumbers.remove(4);
   print('After removing 4: $uniqueNumbers');
 
-  bool containsSix = uniqueNumbers.contains(6);
-  print('Set contains 6: $containsSix');
+  bool contains = uniqueNumbers.contains(6);
+  print('Set contains 6?: $contains');
 }

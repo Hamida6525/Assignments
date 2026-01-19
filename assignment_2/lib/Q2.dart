@@ -12,7 +12,7 @@ void main() {
 
   // b) Print a sentence with all values
   print(
-      "I live in $country, the year is $year, my weight is $weight kg, and it is $likesCoding that I like coding.");
+      "I live in $country, year is $year, my weight is $weight kg and it is $likesCoding ,I like coding.");
 
   // c) Change weight and print updated value
   weight = 70.0;

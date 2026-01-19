@@ -8,9 +8,9 @@ void main() {
   List<String> animals = ['Cat', 'Dog', 'Elephant'];
 
   // b) Add a new animal, remove the last one, and update the second element.
-  animals.add('Lion'); // Adding a new animal
-  animals.removeLast(); // Removing the last animal
-  animals[1] = 'Tiger'; // Updating the second element
+  animals.add('Lion'); 
+  animals.removeLast(); 
+  animals[1] = 'Tiger'; 
 
   // c) Print animals.first, animals.last, and animals.length.
   print(animals);
