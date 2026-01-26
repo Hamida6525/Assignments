@@ -8,7 +8,7 @@ void main() {
   Map<String, dynamic> book = {
     'title': 'Dart Guide',
     'pages': 120,
-    'price': 19.99
+    'price': 19.99,
   };
 
   // b) Print book['title'], update price, and add a new key 'author'.
@@ -20,6 +20,6 @@ void main() {
   print('Keys: ${book.keys}');
   print('Values: ${book.values}');
   print('Contains "pages" key?: ${book.containsKey('pages')}');
+
+  book.containsKey("pages");
 }
-
-
