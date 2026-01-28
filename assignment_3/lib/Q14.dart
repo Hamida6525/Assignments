@@ -4,17 +4,16 @@
   and check if it is greater than or equal to 40.*/
 
 void main() {
-  List<int>? scores; // Nullable list of integers
-
-  // Check if the list is null or empty
+  List<int>? scores = null; 
+  //if (scores != null && scores.isNotEmpty) 
   if (scores == null || scores.isEmpty) {
     print('No scores');
   } else {
-    // Calculate the sum of the first and last elements
+   
     int sum = scores.first + scores.last;
     print('Sum of first and last elements: $sum');
 
-    // Check if the sum is greater than or equal to 40
+    
     if (sum >= 40) {
       print('The sum is greater than or equal to 40.');
     } else {

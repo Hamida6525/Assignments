@@ -2,7 +2,7 @@
 Then use a switch statement to print a message for each grade.*/
 
 void main() {
-  int mark = 85; 
+  int mark = 70; 
   String grade;
 
   // Determine grade based on mark
@@ -15,8 +15,6 @@ void main() {
   } else {
     grade = 'D';
   }
-
-  // Print message based on grade using switch statement
   switch (grade) {
     case 'A':
       print('pass');
