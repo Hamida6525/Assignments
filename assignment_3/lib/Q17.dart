@@ -1,17 +1,16 @@
 /*Write a Dart program that formats a price tag string with a currency. 
-Apply string methods such as toString, padLeft, and length to format and compare the results.*/
+Apply string methods such as toString, padLeft, and length to format
+ and compare the results.*/
 
 void main() {
-  double price = 60.0;
+  double price = 60;
   String currency = "Pounds";
 
-  // Format the price tag
-  String priceTag = price.toStringAsFixed(2).padLeft(5, '0') + ' ' + currency;
 
-  // Print the formatted price tag
+  String priceTag = price.toString().padLeft(2) + ' ' + currency;
+
   print("Formatted Price Tag: $priceTag");
 
-  // Compare lengths
   int originalLength = price.toString().length;
   int formattedLength = priceTag.length;
 
