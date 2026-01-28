@@ -3,11 +3,12 @@ Apply string methods such as toString, padLeft, and length to format
  and compare the results.*/
 
 void main() {
+  //int price = 60; 
   double price = 60;
   String currency = "Pounds";
 
-
-  String priceTag = price.toString().padLeft(2) + ' ' + currency;
+  //var priceTag = price.toString().padLeft(5 ,'pounds') + ' ' + currency;
+  var priceTag = price.toString().padLeft(5) + ' ' + currency;
 
   print("Formatted Price Tag: $priceTag");
 
