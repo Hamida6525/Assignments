@@ -6,17 +6,13 @@ print a default message. Then update the phone number and print its length.*/
 void main() {
   Map<String, String?> user = {
     'name': 'Ahmed',
-    'phone': null, // Phone number is initially null
+    'phone': null, 
   };
-
-  // Safely read the phone number with null safety
   String phoneNumber = user['phone'] ?? "Null";
   print('Phone Number: $phoneNumber');
 
-  // Update the phone number
-  user['phone'] = '123-456-7890';
+  user['phone'] = '0123456789';
 
-  // Print the length of the updated phone number
   String updatedPhoneNumber = user['phone']!;
   print('Phone Number Length: ${updatedPhoneNumber.length}');
 }

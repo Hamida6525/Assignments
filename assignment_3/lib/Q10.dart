@@ -4,25 +4,25 @@
   and check if 'JO' exists—if not, print 'Jordan missing'.*/
 
 void main() {
-  // Initialize the map with country codes  
-  Map<String, String> countryCodes= { 
+  // Initialize the map with country codes
+  Map<String, String> countryCodes = {
     'EG': 'Egypt',
     'US': 'United States',
     'IN': 'India',
     'CN': 'China',
-  };  
-  
+  };
+
   print("Country for 'EG': ${countryCodes['EG']}");
 
   countryCodes['QA'] = 'Qatar';
- 
+  countryCodes.entries.length;
   print("Total number of country codes: ${countryCodes.length}");
- 
+  //if(!countryCodes.containsKey('JO')) 
   if (countryCodes.containsKey('JO')) {
     print('Jordan exists');
   } else {
     print('Jordan missing');
   }
+
+  //countryCodes["JO"] ?? print ('Jordan missing');
 }
-
-
