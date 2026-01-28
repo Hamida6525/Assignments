@@ -1,5 +1,7 @@
-/* Write a Dart program that evaluates three integer variables with different logical and comparison expressions.
- Print the results, then decide whether to print 'Rule passed' or 'Rule failed' based on one of the expressions.*/
+/* Write a Dart program that evaluates three integer variables with different logical
+ and comparison expressions.
+ Print the results, then decide whether to print 'Rule passed' or 
+ 'Rule failed' based on one of the expressions.*/
 
 void main() {
   int a = 10;
@@ -7,9 +9,9 @@ void main() {
   int c = 15;
 
   
-  bool expr1 = (a < b) && (b > c); // true
-  bool expr2 = (a + c) == b; // false
-  bool expr3 = (b - a) >= c; // true
+  bool expr1 = (a < b) && (b > c); 
+  bool expr2 = (a + c) == b; 
+  bool expr3 = (b - a) >= c; 
 
   print('Expression 1 (a < b && b > c): $expr1');
   print('Expression 2 (a + c == b): $expr2');
