@@ -7,7 +7,7 @@ import 'dart:io';
 import 'dart:math';
 void main() {
   Random random = Random();
-  int targetNumber = random.nextInt(20) + 1; // Generates a number between 1 and 20
+  int targetNumber = random.nextInt(20) + 1;
   int maxAttempts = 3;
   bool hasGuessedCorrectly = false;
 
@@ -18,7 +18,7 @@ void main() {
     int userGuess = int.parse(stdin.readLineSync()!);
 
     if (userGuess == targetNumber) {
-      print('Congratulations! You guessed the correct number: $targetNumber');
+      print('You guessed the correct number: $targetNumber');
       hasGuessedCorrectly = true;
       break;
     } else if (userGuess < targetNumber) {
@@ -29,6 +29,6 @@ void main() {
   }
 
   if (!hasGuessedCorrectly) {
-    print('Sorry, you\'ve used all your attempts. The correct number was $targetNumber.');
+    print('The correct number was $targetNumber.');
   }
 }

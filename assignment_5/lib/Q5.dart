@@ -1,5 +1,6 @@
 /*Multiplication Table with Sum - Ask the user for a number.
- - Print its multiplication table up to 10, then calculate the sum of all results.*/
+ - Print its multiplication table up to 10,
+  then calculate the sum of all results.*/
 
 import 'dart:io'; 
 void main() {
@@ -13,6 +14,6 @@ void main() {
     print('$num x $i = $result');
     sum += result;
   }
-  
+
   print('Sum of all results: $sum');
 }
