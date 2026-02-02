@@ -3,8 +3,9 @@
 
 void main() {
   String text = "EGP 12.50";
-
-  double number = 12.50;
+ 
+ 
+  double number = double.parse(text.substring(4));
 
   print(number);
 }

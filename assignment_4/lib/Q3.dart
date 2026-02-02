@@ -1,4 +1,4 @@
-/*create a program with a price of 180 and a flag showing the person is a student.
+/*create a program with a price of 180 and a flag(means boolen) showing the person is a student.
  If the person is a student and the price is 150 or more, reduce the price by 15.
   Print the final price.*/
 

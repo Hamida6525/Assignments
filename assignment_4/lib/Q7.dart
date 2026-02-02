@@ -12,5 +12,5 @@ void main() {
       total + score;
     }
   }
-  print("Total score (ignoring zeros): $total");
+  print("Total score: $total");
 }
