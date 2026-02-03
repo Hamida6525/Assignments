@@ -8,3 +8,8 @@ class Solution {
     return x == x.split('').reversed.join();
   }
 }
+
+/*bool isPalindrome(String s) {
+  s = s.replaceAll(RegExp(r'[^A-Za-z0-9]'), '').toLowerCase();
+  return s.split('').reversed.join()==s;
+}*/
