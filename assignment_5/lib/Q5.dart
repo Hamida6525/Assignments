@@ -5,7 +5,7 @@
 import 'dart:io'; 
 void main() {
   print('Enter a number:');
-  int num = int.parse(stdin.readLineSync()!);
+  int? num = int.parse(stdin.readLineSync()!);
 
   int sum = 0;
   print('Multiplication table for $num:');

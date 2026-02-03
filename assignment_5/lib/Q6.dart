@@ -15,7 +15,7 @@ void main() {
 
   for (int attempt = 1; attempt <= maxAttempts; attempt++) {
     print('Attempt $attempt: Enter your guess:');
-    int userGuess = int.parse(stdin.readLineSync()!);
+    int? userGuess = int.parse(stdin.readLineSync()!);
 
     if (userGuess == targetNumber) {
       print('You guessed the correct number: $targetNumber');
