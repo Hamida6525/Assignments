@@ -12,8 +12,8 @@ void main() {
     List<String> words = input.split(' ');
 
     int wordCount = words.length;
-    String shortestWord = words.reduce((a, b) => a.length <= b.length ? a : b);
-    String longestWord = words.reduce((a, b) => a.length >= b.length ? a : b);
+    String shortestWord = words.reduce((value, element) => value.length <= element.length ? value : element);
+    String longestWord = words.reduce((value, element) => value.length >= element.length ? value : element);
 
     print('Number of words: $wordCount');
     print('Shortest word: $shortestWord');
