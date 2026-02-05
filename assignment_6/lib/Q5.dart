@@ -23,7 +23,7 @@ void main() {
       secondLargest = number;
     }
   }
-
+  
   print('The largest number is: $largest');
   print('The second largest number is: $secondLargest');
 }
