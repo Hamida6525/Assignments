@@ -12,14 +12,14 @@ void main() {
     numbers.add(num);
   }
 
-  int? largest;
-  int? secondLargest;
+  int largest = numbers[0];
+  int secondLargest = numbers[0];
 
   for (int number in numbers) {
-    if (largest == null || number > largest) {
+    if (number > largest) {
       secondLargest = largest;
       largest = number;
-    } else if ((secondLargest == null || number > secondLargest) && number != largest) {
+    } else if (( number > secondLargest) && number != largest) {
       secondLargest = number;
     }
   }

@@ -12,11 +12,42 @@ void main() {
     List<String> words = input.split(' ');
 
     int wordCount = words.length;
-    String shortestWord = words.reduce((value, element) => value.length <= element.length ? value : element);
-    String longestWord = words.reduce((value, element) => value.length >= element.length ? value : element);
+
+    String shortestWord = words[0];
+    String longestWord = words[0];
+
+   
+    for (int i = 1; i < words.length; i++) {
+      if (words[i].length < shortestWord.length) {
+        shortestWord = words[i];
+      }
+
+      if (words[i].length > longestWord.length) {
+        longestWord = words[i];
+      }
+    }
 
     print('Number of words: $wordCount');
     print('Shortest word: $shortestWord');
     print('Longest word: $longestWord');
   }
 }
+
+
+
+// void main() {
+//   print('Enter a sentence:');
+//   String? input = stdin.readLineSync();
+
+//   if (input != null && input.isNotEmpty) {
+//     List<String> words = input.split(' ');
+
+//     int wordCount = words.length;
+//     String shortestWord = words.reduce((value, element) => value.length <= element.length ? value : element);
+//     String longestWord = words.reduce((value, element) => value.length >= element.length ? value : element);
+
+//     print('Number of words: $wordCount');
+//     print('Shortest word: $shortestWord');
+//     print('Longest word: $longestWord');
+//   }
+// }
