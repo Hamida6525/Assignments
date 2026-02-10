@@ -12,14 +12,43 @@ void main() {
 }
 
 int sumDigits(int number) {
-  for (int sum = 0; number > 0; number ~/= 10) {
-    sum += number % 10;
-    if (sum >= 10) {
-      sum = sumDigits(sum);
+  while (number >= 10) { 
+    int sum = 0;
+
+    while (number > 0) {
+      int lastDigit = number - (number ~/ 10) * 10;
+      sum += lastDigit;
+      number ~/= 10;
     }
-    if (number < 10 && sum < 10) {
-      return sum;
-    }
+    number = sum;
   }
-  return 0;
+
+  return number;
 }
+
+
+
+
+
+
+// import 'dart:io';
+
+// void main() {
+//   print("Enter a number:");
+//   int number = int.parse(stdin.readLineSync()!);
+//   int result = sumDigits(number);
+//   print("Final single-digit result: $result");
+// }
+
+// int sumDigits(int number) {
+//   for (int sum = 0; number > 0; number ~/= 10) {
+//     sum += number % 10;
+//     if (sum >= 10) {
+//       sum = sumDigits(sum);
+//     }
+//     if (number < 10 && sum < 10) {
+//       return sum;
+//     }
+//   }
+//   return 0;
+// }
