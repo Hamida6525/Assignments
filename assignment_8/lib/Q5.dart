@@ -4,7 +4,7 @@
 - In main(), create a book, print its title and estimated reading time.*/
 
 void main() {
-  Book book = Book('The Great Gatsby', 120);
+  Book book = Book('alice in the wonderland', 120);
   print(
     'Book: ${book.title}, Estimated Reading Time: ${book.readingTime} minutes',
   );

@@ -17,13 +17,12 @@ class BankAccount {
   double _balance;
 
   BankAccount(this._balance);
-
-  double get balance => _balance;
   set balance(double value) {
     if (value < 0) {
       print('Invalid balance');
-    } else {
+    } 
       _balance = value;
-    }
+
   }
+  get balance => _balance;
 }

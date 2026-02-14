@@ -23,10 +23,10 @@ bool isValid(String s) {
     '}': '{'
   };
 
-  for (int i = 0; i < s.length; i++) {
-    String char = s[i];
-    if (pairs.containsKey(char)) {
-      if (stack.isEmpty || stack.removeLast() != pairs[char]) {
+  for (var char in s.split('')) {
+    if (pairs.values.contains(char)) {
+      String openingBrackets = pairs[char]!;
+      if (stack.isEmpty || stack.removeLast() != openingBrackets) {
         return false;
       }
     } else {

@@ -15,18 +15,19 @@ class Product {
   Product(this._name, this._price);
 
   set name(String value) {
-    if (value.isEmpty) {
+    if (value.isNotEmpty) {
       _name = value;
     }
   }
+ 
+  get name => _name;
 
   set price(double value) {
-    if (value < 0) {
+    if (value > 0) {
       _price = value;
     }
   }
 
-  String get name => _name;
-  double get price => _price;
-  double get discountedPrice => _price * 0.9; // 10% discount
+  get price => _price;
+  get discountedPrice => _price * 0.9;
 }
