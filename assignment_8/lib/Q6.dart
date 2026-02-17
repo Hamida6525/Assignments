@@ -17,20 +17,16 @@ void main() {
 
 bool isValid(String s) {
   List<String> stack = [];
-  Map<String, String> pairs = {
-    ')': '(',
-    ']': '[',
-    '}': '{'
-  };
+  Map<String, String> pairs = {')': '(', ']': '[', '}': '{'};
 
   for (var char in s.split('')) {
     if (pairs.values.contains(char)) {
+      stack.add(char);
+    } else {
       String openingBrackets = pairs[char]!;
       if (stack.isEmpty || stack.removeLast() != openingBrackets) {
         return false;
       }
-    } else {
-      stack.add(char);
     }
   }
   return stack.isEmpty;

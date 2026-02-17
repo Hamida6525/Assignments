@@ -7,8 +7,10 @@
 void main() {
   BankAccount account = BankAccount(1000);
   print('Balance: \$${account.balance}');
+
   account.balance = 1500;
   print('Updated Balance: \$${account.balance}');
+
   account.balance = -500;
   print('Final Balance: \$${account.balance}');
 }
@@ -20,9 +22,10 @@ class BankAccount {
   set balance(double value) {
     if (value < 0) {
       print('Invalid balance');
-    } 
-      _balance = value;
-
+      return;
+    }
+    _balance = value;
   }
+
   get balance => _balance;
 }
