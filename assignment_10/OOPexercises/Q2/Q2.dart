@@ -5,6 +5,7 @@ Imagine you are building a food delivery app.
 - The app should calculate the total price of the order.*/
 
 import 'foodItem.dart';
+import 'menu.dart';
 import 'order.dart';
 
 void main() {
@@ -12,11 +13,9 @@ void main() {
   FoodItem cola = FoodItem("Cola", 30, "Drinks");
   FoodItem burger = FoodItem("Burger", 120, "Fast Food");
 
-
   Order order = Order();
   order.addToOrder(pizza);
   order.addToOrder(cola);
   order.addToOrder(burger);
-
   print("Total Price: ${order.calculateTotal()}");
 }
