@@ -6,6 +6,7 @@ You are building a simple notes app where users can write and manage their notes
 - The app should allow searching for a note by its title.*/
 
 
+
 import 'noteApp.dart';
 
 void main() {
@@ -17,7 +18,6 @@ void main() {
   print("All Notes:");
   app.listAllNotes();
 
-  print("Search Result:");
   var result = app.searchByTitle("shopping list");
   if (result != null) {
     result.display();
