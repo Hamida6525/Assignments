@@ -4,15 +4,14 @@ Imagine you are building a food delivery app.
 - A user can add multiple items to an order.
 - The app should calculate the total price of the order.*/
 
-
 import 'foodItem.dart';
 import 'order.dart';
 
 void main() {
- 
   FoodItem pizza = FoodItem("Pepperoni Pizza", 150, "Pizza");
   FoodItem cola = FoodItem("Cola", 30, "Drinks");
   FoodItem burger = FoodItem("Burger", 120, "Fast Food");
+
 
   Order order = Order();
   order.addToOrder(pizza);
@@ -21,9 +20,3 @@ void main() {
 
   print("Total Price: ${order.calculateTotal()}");
 }
-
-
-
-
-
-
