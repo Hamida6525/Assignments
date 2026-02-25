@@ -5,7 +5,6 @@ Imagine you are building a food delivery app.
 - The app should calculate the total price of the order.*/
 
 import 'foodItem.dart';
-import 'menu.dart';
 import 'order.dart';
 
 void main() {
