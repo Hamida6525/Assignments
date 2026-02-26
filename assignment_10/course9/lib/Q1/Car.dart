@@ -3,10 +3,10 @@ import 'Q1.dart';
 class Car extends Vehicle {
   int _passengers;
 
-  Car(String name, double capacity, double efficiency, int passengers)
-      : _passengers = 1,
+  Car(this._passengers,String name, double capacity, double efficiency)
+      :
         super(name, capacity, efficiency) {
-    setPassengers(passengers);
+    setPassengers(_passengers);
   }
 
   void setPassengers(int value) {

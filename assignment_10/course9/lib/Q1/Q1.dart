@@ -20,9 +20,8 @@ void main() {
   List<double> trips = [100, 120, 70];
 
   List<Vehicle> vehicles = [
-    Car("Sedan", 50, 6, 7),
-    Truck("Big Truck", 120, 15, 5),
-    Car("Toyota", 180, 5, 3)
+    Car(4, "Sedan", 50, 8), // 4 passengers, 50L capacity, 8L/100km
+    Truck(2, "Pickup", 80, 12) // 2 tons load, 80L capacity, 12L/100km
   ];
 
   for (var vehicle in vehicles) {

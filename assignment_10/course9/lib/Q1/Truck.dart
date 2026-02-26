@@ -2,11 +2,10 @@ import 'Q1.dart';
 
 class Truck extends Vehicle {
   double _cargoWeight;
-
-  Truck(String name, double capacity, double efficiency, double cargoWeight)
-      : _cargoWeight = 0,
+  Truck(this._cargoWeight,String name, double capacity, double efficiency)
+      :
         super(name, capacity, efficiency) {
-    setCargoWeight(cargoWeight);
+    setCargoWeight(_cargoWeight);
   }
 
   void setCargoWeight(double value) {
