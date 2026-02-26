@@ -19,7 +19,6 @@ class Solution {
       prev = current; 
       current = nextNode; 
     }
-
     return prev;
   }
 }
