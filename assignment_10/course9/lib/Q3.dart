@@ -43,3 +43,32 @@ class integerNums {
   }
 } 
 
+// void main() {
+//   List<int> nums = [-1, 0, 3, 5, 9, 12];
+//   int target = 9;
+//   int result = search(nums, target);
+//   print(result); // Output: 4
+
+//   target = 2;
+//   result = search(nums, target);
+//   print(result); // Output: -1
+// }
+
+// int search(List<int> nums, int target) {
+//   int start = 0;
+//   int end = nums.length - 1;
+
+//   while (start <= end) {
+//     int mid = start + (end - start) ~/ 2;
+
+//     if (nums[mid] == target) {
+//       return mid;
+//     } else if (nums[mid] < target) {
+//       start = mid + 1;
+//     } else {
+//       end = mid - 1;
+//     }
+//   }
+//   return -1;
+// }
+
