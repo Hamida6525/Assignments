@@ -2,13 +2,11 @@
 // which data type would you use? Write a code example to show this.
 
 void main() {
-  dynamic x = 10; 
-  print("value: $x");
+  dynamic x;
 
   x = "Now I'm a string"; // Changing to a string value
   print("value: $x");
-  
+
   x = 3.14; // Changing to a double value
   print("value: $x");
 }
-

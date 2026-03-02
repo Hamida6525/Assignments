@@ -3,8 +3,16 @@
 
 void main() {
   int age = 25; 
-  print("Person's age is: $age");
+
+  if (age is int) {
+    print("Person's age is: $age");
+  } else {
+    print("Age must be an integer.");
+  }
+
+  //print("Person's age is: $age");
 } 
+
 
 
 
